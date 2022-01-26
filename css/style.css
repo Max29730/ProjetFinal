@@ -93,6 +93,16 @@ main {
 }
 
 
+/*///////////////////////////// FILMS //////////////////////////*/
+
+.masqueSalle,
+.masqueFilm,
+.masqueHeure,
+.masqueJour {
+    display: none;
+}
+
+
 /*///////////////////////////// MOBILE //////////////////////////*/
 
 @media (max-width: 1024px) {
