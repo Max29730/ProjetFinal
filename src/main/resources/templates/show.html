@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Seance</title>
+</head>
+<body>
+	<!-- 	<p th:text="${seance}"></p> -->
+	<p th:text="${seance.id}"></p>
+	<p th:text="${seance.film.film}"></p>
+	<p th:text="${seance.jour}"></p>
+	<p th:text="${seance.heure}"></p>
+	<h6>Places restantes</h6>
+	<p th:if="${seance.salle.capacite} - ${nombre} == 0"
+		th:text="${seance.salle.capacite} - ${nombre}" style="color: red"></p>
+	<p th:if="${seance.salle.capacite} - ${nombre} > 0"
+		th:text="${seance.salle.capacite} - ${nombre}" style="color: blue"></p>
+	<a th:href="@{/reserv/{id}(id=${seance.id})}">Reservation de cette
+		seance</a>
+	<a  th:if="${seance.salle.capacite} - ${nombre} > 0" th:href="@{/add/{id}(id=${seance.id})}">Reserver cette seance</a>
+</body>
+</html>

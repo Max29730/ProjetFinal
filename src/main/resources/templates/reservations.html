@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Liste des reservations</title>
+</head>
+<body>
+
+	<h1>Liste des reservations</h1>
+	
+	<a href="/index">Accueil</a>
+
+	<div th:each="reservation : ${reservations}">
+		<h6>Id reservation</h6>
+		<p th:text="${reservation.id}"></p>
+		<h6>Nom du film</h6>
+		<p th:text="${reservation.seance.film.film}"></p>
+		<h6>Nom de la salle</h6>
+		<p th:text="${reservation.seance.salle.salle}"></p>
+		<a th:href="@{/delete/{id}(id=${reservation.id})}">Effacer reservation</a>
+		<hr>
+	</div>
+
+</body>
+</html>

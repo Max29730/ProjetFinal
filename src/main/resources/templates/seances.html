@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Liste des seances</title>
+</head>
+<body>
+
+	<h1>Liste des seances</h1>
+	
+	<a href="/index">Accueil</a>
+		
+	<div th:each="seance : ${seances}">
+		<h6>Id seance</h6>
+		<a th:href="@{show/{id}(id=${seance.id})}" th:text="${seance.id}"></a>			
+	<hr>
+	</div>	
+	
+
+</body>
+</html>
