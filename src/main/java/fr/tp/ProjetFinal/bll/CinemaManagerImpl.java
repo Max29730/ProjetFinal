@@ -16,7 +16,7 @@ import fr.tp.ProjetFinal.dal.Seancedao;
 
 
 @Service
-public class ReservationManagerImpl implements ReservationManager {
+public class CinemaManagerImpl implements CinemaManager {
 	@Autowired
 	protected Reservationdao reservationdao;
 
@@ -40,9 +40,9 @@ public class ReservationManagerImpl implements ReservationManager {
 
 	@Transactional
 	@Override
-	public void addReservationAC(Reservation reservation, Seance seance) throws ReservationManagerException {
+	public void addReservationAC(Reservation reservation, Seance seance) throws CinemaManagerException {
 		if (reservationdao.findAllBySeance(seance).size() == (seance.getSalle().getCapacite())) {
-			throw new ReservationManagerException("Plus de places");
+			throw new CinemaManagerException("Plus de places");
 		}
 		reservationdao.save(reservation);
 	}

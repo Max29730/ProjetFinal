@@ -6,7 +6,7 @@ import fr.tp.ProjetFinal.bo.Reservation;
 import fr.tp.ProjetFinal.bo.Seance;
 
 
-public interface ReservationManager {
+public interface CinemaManager {
 
 	public List<Film> getAllFilm();
 
@@ -26,6 +26,6 @@ public interface ReservationManager {
 	
 	public List<Reservation> getReservationSeance(Seance seance);
 
-	void addReservationAC(Reservation reservation, Seance seance) throws ReservationManagerException;
+	void addReservationAC(Reservation reservation, Seance seance) throws CinemaManagerException;
 	
 }

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import fr.tp.ProjetFinal.bll.ReservationManager;
+import fr.tp.ProjetFinal.bll.CinemaManager;
 import fr.tp.ProjetFinal.bo.Film;
 import fr.tp.ProjetFinal.bo.Reservation;
 
@@ -18,12 +18,12 @@ import fr.tp.ProjetFinal.bo.Reservation;
 public class ReservationWS {
 
 	@Autowired
-	private ReservationManager manager;
+	private CinemaManager manager;
 
-	@GetMapping("/films")
-	public List<Film> getAllFilm() {
-		return manager.getAllFilm();
-	}
+//	@GetMapping("/films")
+//	public List<Film> getAllFilm() {
+//		return manager.getAllFilm();
+//	}
 
 	@GetMapping("/reservation")
 	public List<Reservation> getAllReservation() {
