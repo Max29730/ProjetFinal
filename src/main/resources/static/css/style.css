@@ -36,6 +36,10 @@ main {
     background-color: #202124;
 }
 
+a{
+	text-decoration: none;
+}
+
 
 /* //////////////////////////ACCUEIL/////////////////////////////// */
 
@@ -54,8 +58,8 @@ main {
 
 .titreindex {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5px;
+    margin-bottom: 40px;
     order: 0;
     flex: 0 1 100%;
     align-self: auto;
@@ -93,16 +97,6 @@ main {
 }
 
 
-/*///////////////////////////// FILMS //////////////////////////*/
-
-.masqueSalle,
-.masqueFilm,
-.masqueHeure,
-.masqueJour {
-    display: none;
-}
-
-
 /*///////////////////////////// MOBILE //////////////////////////*/
 
 @media (max-width: 1024px) {
@@ -114,3 +108,119 @@ main {
         margin-bottom: 5%;
     }
 }
+
+
+/*///////////////////////////// SEANCES //////////////////////////*/
+
+.masqueSalle,
+.masqueFilm,
+.masqueHeure,
+.masqueJour {
+display: none;
+}
+/*///////////////////////////// RESERVATIONS //////////////////////////*/
+.titrereservation{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    order: 0;
+    flex: 0 1 100%;
+    align-self: auto;
+}
+
+.mainreservation{
+
+   
+    color: beige;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+
+}
+/*///////////////////////////// FILMS //////////////////////////*/
+.titrefilms{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    order: 0;
+    flex: 0 1 100%;
+    align-self: auto;
+}
+
+.mainfilms{
+
+   
+    color: beige;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+
+}
+/*///////////////////////////// NOUVEAU FILM //////////////////////////*/
+.titrenouveaufilm{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    order: 0;
+    flex: 0 1 100%;
+    align-self: auto;
+}
+
+.mainnouveaufilm{
+
+   
+    color: beige;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+
+}
+/*///////////////////////////// NOUVELLE SEANCE //////////////////////////*/
+.titrenouvelleseance{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    order: 0;
+    flex: 0 1 100%;
+    align-self: auto;
+}
+
+.mainnouvelleseance{
+
+   
+    color: beige;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+
+}
+/*///////////////////////////// RESERVER SEANCE //////////////////////////*/
+.titrereserverseance{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    order: 0;
+    flex: 0 1 100%;
+    align-self: auto;
+}
+
