@@ -10,7 +10,7 @@
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 
-<body>
+<body onload="location.href = '/redirect'">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
@@ -30,7 +30,7 @@
         </nav>
     </header>
     <main class="mainnouveaufilm container">
-        <h1 class="titrenouveaufilm text-white">Ajouter un nouveau film</h1>
+        <h1 class="titrenouveaufilm text-white" onload="location.href = '/redirect'">Ajouter un nouveau film</h1>
         <form class="row g-3">
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Nom du film</label>
@@ -59,7 +59,7 @@
     </button>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content" onload="location.href = '/redirect'">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -73,7 +73,7 @@
             </div>
         </div>
     </main>
-    <footer class="bg-dark">
+    <footer class="bg-dark" onload="location.href = '/redirect'">
         <div class="container px-4 px-lg-5">
             <p class="m-0 text-center text-white">Copyright &copy; Maxime Titsaoui</p>
         </div>

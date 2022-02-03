@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand text-white" href="/index">Cinéma</a>
+                <a class="navbar-brand text-white" href="/index" onload="location.href = '/redirect'">Cinéma</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,7 +30,7 @@
                             <a class="nav-link text-white" href="/seances">Séances</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="/reservations">Réservations</a>
+                            <a class="nav-link text-white" href="/reservations" onload="location.href = '/redirect'">Réservations</a>
                         </li>
                     </ul>
                 </div>
@@ -42,7 +42,7 @@
             <h1 class="titrereservation text-white">Rechercher une séance</h1>
             <div class="input-group rounded ">
                 <input type="search" class="form-control rounded" placeholder="Film" aria-label="Search" aria-describedby="search-addon" id="rechercheFilm" onkeyup="rechercheFilm()" />
-                <span class="input-group-text border-0" id="search-addon">
+                <span class="input-group-text border-0" id="search-addon" onload="location.href = '/redirect'">
 				<i class="fas fa-search"></i>
 			</span>
             </div>
@@ -64,7 +64,7 @@
 				<i class="fas fa-search"></i>
 			</span>
             </div>
-            <table class="table text-white" id="tableau">
+            <table class="table text-white" id="tableau" onload="location.href = '/redirect'">
                 <thead>
                     <tr>
                         <th scope="col" onclick="sortTable(0)">#Séance</th>
