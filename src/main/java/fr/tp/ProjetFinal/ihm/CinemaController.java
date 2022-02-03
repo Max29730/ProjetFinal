@@ -92,4 +92,9 @@ public class CinemaController {
 		return "reserverseance";
 	}
 
+	@GetMapping("redirect")
+	public String redirect(){
+		return "redirect";
+	}
+
 }

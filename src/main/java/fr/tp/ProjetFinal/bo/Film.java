@@ -26,7 +26,6 @@ public class Film {
 	@Column(name = "duree_minute")
 	private double dureeMinute;
 
-	// constructeur sans id
 	public Film(String film, double dureeMinute) {
 		super();
 		this.film = film;
