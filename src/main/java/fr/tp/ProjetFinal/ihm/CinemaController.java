@@ -22,13 +22,13 @@ public class CinemaController {
 
 	@GetMapping("/index")
 	public String index() {
-		return "index3";
+		return "index";
 	}
 
 	@GetMapping("/reservations")
 	public String reservations(Model model) {
 		model.addAttribute("reservations", manager.getAllReservation());
-		return "reservations2";
+		return "reservations";
 	}
 
 	@GetMapping("/add/{id}")
@@ -59,7 +59,7 @@ public class CinemaController {
 	@GetMapping("/seances")
 	public String seances(Model model) {
 		model.addAttribute("seances", manager.getAllSeance());
-		return "seances3";
+		return "seances";
 	}
 
 	@GetMapping("/delete/{id}")
